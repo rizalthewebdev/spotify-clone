@@ -5,9 +5,14 @@ module.exports = {
    ],
    theme: {
       extend: {},
-      colors: {
-        'darkBg' : '#121212'
-      },
    },
-   plugins: [],
+   variants: {
+      extend: {},
+      scrollbar: ["rounded"],
+   },
+   plugins: [
+      require("tailwind-scrollbar"),
+      require("@tailwindcss/forms"),
+      require("tailwind-scrollbar-hide"),
+   ],
 };
